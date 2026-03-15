@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="w-[35%] relative flex items-center justify-center bg-slate-950">
           <div className="relative w-full h-full">
             <Image
-              src="/images/hero.jpg"
+              src="/images/hero.jpeg"
               alt="Hero Image"
               fill
               className="object-cover"
