@@ -22,7 +22,7 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-white">
+    <div className="w-full min-h-screen bg-slate-950">
       {/* Navigation */}
       <div className="sticky top-0 z-50">
         <Navbar activeSection={activeSection} onNavigate={handleNavigate} />

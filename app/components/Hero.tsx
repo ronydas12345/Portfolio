@@ -3,9 +3,9 @@ import Image from 'next/image';
 export default function Hero() {
 
   return (
-    <section className="w-full h-[1024px] bg-white overflow-hidden">
+    <section className="w-full bg-slate-950 overflow-hidden">
       {/* Main Content */}
-      <div className="w-full h-[503px] mt-[126px] flex">
+      <div className="w-full h-[400px] flex">
         {/* Left Section - Title and Description */}
         <div className="w-[65%] flex flex-col">
           {/* Title Section */}
@@ -28,7 +28,7 @@ export default function Hero() {
         </div>
 
         {/* Right Section - Image */}
-        <div className="w-[35%] relative flex items-center justify-center bg-white">
+        <div className="w-[35%] relative flex items-center justify-center bg-slate-950">
           <div className="relative w-full h-full">
             <Image
               src="/images/hero.jpg"
@@ -41,15 +41,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom Section - About Me Introduction */}
-      <div className="w-full h-[495px] bg-black flex flex-col">
-        <div className="h-40 bg-black flex items-center">
-          <h2 className="text-7xl font-normal text-white text-right px-8 ml-auto">
-            About Me
-          </h2>
-        </div>
-        <div className="flex-1 bg-zinc-300" />
-      </div>
+      {/* Divider Line */}
+      <div className="w-full h-[2px] bg-neutral-700" />
     </section>
   );
 }

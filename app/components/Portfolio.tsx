@@ -48,10 +48,10 @@ const projects: Project[] = [
 
 export default function Portfolio() {
   return (
-    <section className="w-full min-h-screen bg-gray-50 py-20 px-8">
+    <section className="w-full min-h-screen bg-black py-20 px-8">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-6xl font-bold text-black mb-4">Portfolio</h2>
-        <p className="text-xl text-gray-600 mb-12">
+        <h2 className="text-6xl font-bold text-white mb-4">Portfolio</h2>
+        <p className="text-xl text-gray-400 mb-12">
           Here are some of my recent projects and works
         </p>
 
@@ -59,10 +59,10 @@ export default function Portfolio() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+              className="bg-slate-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-700"
             >
               {/* Project Image */}
-              <div className="relative w-full h-64 bg-gray-200">
+              <div className="relative w-full h-64 bg-slate-800">
                 <Image
                   src={project.imageUrl}
                   alt={project.title}
@@ -73,10 +73,10 @@ export default function Portfolio() {
 
               {/* Project Content */}
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-black mb-3">
+                <h3 className="text-2xl font-bold text-white mb-3">
                   {project.title}
                 </h3>
-                <p className="text-gray-700 mb-4">
+                <p className="text-gray-400 mb-4">
                   {project.description}
                 </p>
 
@@ -85,7 +85,7 @@ export default function Portfolio() {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-slate-900 text-white text-sm px-3 py-1 rounded-full"
+                      className="bg-blue-900 text-blue-100 text-sm px-3 py-1 rounded-full"
                     >
                       {tech}
                     </span>
@@ -95,7 +95,7 @@ export default function Portfolio() {
                 {/* Link */}
                 <a
                   href={project.link}
-                  className="inline-block mt-4 px-6 py-2 bg-slate-950 text-white rounded-lg hover:bg-slate-800 transition-colors"
+                  className="inline-block mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                 >
                   View Project →
                 </a>
